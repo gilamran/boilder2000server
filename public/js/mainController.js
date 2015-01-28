@@ -1,8 +1,9 @@
 var mainController = function ($http) {
 	this.status = "Ideal";
 	this.targetUrl = "http://localhost:3000/serverListener";
-	this.valueFromClient = "ABC";
-	this.serverResponse = "This is the server response";
+	this.valueFromClient1 = "ABC";
+	this.valueFromClient2 = "DEF";
+	this.serverResponse = "This will be the server response";
 
 		this.clearServerResponse = function () {
 			this.serverResponse = "";
@@ -14,7 +15,10 @@ var mainController = function ($http) {
 			var req = {
 				method: 'POST',
 				url: this.targetUrl,
-				data: { valueFromClient: this.valueFromClient }
+				data: {
+					valueFromClient1: this.valueFromClient1,
+					valueFromClient2: this.valueFromClient2
+				}
 			};
 
 			$http(req).

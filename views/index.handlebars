@@ -1,0 +1,23 @@
+<div ng-controller="mainController as vm">
+  <h1>{{title}}</h1>
+  <div>Status:<span ng-bind="vm.status"></span></div>
+  </br>
+
+	<div class="formLine">
+	  <label>Target Url:</label>
+	  <input type="text" ng-model="vm.targetUrl"/>
+	</div>
+
+	<div class="formLine">
+	  <label>Value to send:</label>
+	  <input type="text" ng-model="vm.valueFromClient"/>
+	</div>
+
+  <button ng-click="vm.onButtonClicked()">Send to the server</button>
+  </br>
+  </br>
+
+  <textarea ng-model="vm.serverResponse" class="serverResponseTextArea"></textarea>
+  </br>
+  <button ng-click="vm.clearServerResponse()">Clear</button>
+</div>

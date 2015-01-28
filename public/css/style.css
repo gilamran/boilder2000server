@@ -1,0 +1,26 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+a {
+  color: #00B7FF; }
+
+label {
+  width: 150px;
+  display: inline-block;
+  text-decoration: underline; }
+
+input {
+  display: inline-block;
+  width: 250px; }
+
+.formLine {
+  display: block;
+  height: 32px; }
+
+.serverResponseTextArea {
+  display: block;
+  width: 400px;
+  height: 200px; }
+
+/*# sourceMappingURL=style.css.map */
